@@ -94,7 +94,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(/images/img8.jpg)center center no-repeat;
+    background: url("/images/img8.jpg")center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
