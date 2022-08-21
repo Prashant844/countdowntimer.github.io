@@ -94,7 +94,7 @@ function  NewYear()
    <div class="hide-content" >
        <h1 id="new-year">Happy New Year</h1>
        <span>${nowyear + 1}</span>
-       <audio loop=" "> 
+       <audio autoplay loop=" "> 
            <source src="/Audio/Happy New Year.mp3" type="audio/mp3">
        </audio>
    </div>
