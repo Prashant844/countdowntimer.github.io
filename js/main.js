@@ -24,8 +24,6 @@ date.innerHTML = `${nowdate}-${months[nowmonth]}-${nowyear}`;
 
 // ************************************************
 
-setInterval(Timer, 1000);
-
 // Set the New Year Date
 var newYearDate = new Date(`31 december,${nowyear} 00:00:00 PM`);
 
@@ -37,15 +35,10 @@ let diff = (newYearDate - currentDate) / 1000 ;
 // Create the timer function , which getting and setting the Time Factors.
 function Timer()
 {
-//  checks the Difference is higher or Lower from the NewYear.
-//  if Condition is true , then it Will return from here.
-if(diff < 0) 
-{
-    var getNewYearWindow = setTimeout(NewYear,2000);
-    clearTimeout(getNewYearWindow(),1000);
-};
-
-// if condition is false , then it will continue....
+    currentDate = new Date();
+    nowdate = currentDate.getDate();
+    nowmonth = currentDate.getMonth();
+    let diff = (newYearDate - currentDate) / 1000 ; 
 
     // convert the Getting difference Time into Integer Days format.
     let days = Math.floor(diff/3600 /24);
@@ -75,9 +68,16 @@ if(diff < 0)
     inputs[3].value = Second;
 }
 
-
 // Set The Time InterVal , Which Call the Timer Function after every 1 Seconds;
+setInterval(Timer, 1000);
 
+//  checks the Difference is higher or Lower from the NewYear.
+//  if Condition is true , then it Will return from here.
+if(diff < 0) 
+{
+    var getNewYearWindow = setTimeout(NewYear,2000);
+    clearTimeout(getNewYearWindow(),1000);
+};
 //  set New Year numnber  in CountDown Timer 
       // getting the Element
 let setNewYear = document.querySelector('.countDown-timer h1');
