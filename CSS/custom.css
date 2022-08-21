@@ -9,7 +9,7 @@
 {
     width: 100vw;
     height: 100vh;
-    background-image: url("/images/img6.jpg");
+    background-image: url("../images/img6.jpg");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +94,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("/images/img8.jpg")center center no-repeat;
+    background: url("../images/img8.jpg")center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
