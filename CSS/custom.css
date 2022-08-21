@@ -291,12 +291,12 @@ input
     height: 1px;
     left:25%;
     }
-    .date
+     .date
     {
       text-align: center;
       z-index: 1;
       top: 85%;
-      left: -30%;
+      left: -5%;
     }
     .countDown-timer
     {
