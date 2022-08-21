@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the Page -->
+    <title>CountDown Timer</title>
+    <!-- linking External CSS -->
+    <link rel="stylesheet" href="./CSS/custom.css">
+</head>
+<body>
+    <!-------------------Background Section--------------Contain Effective Background -------------- -->
+    <div class="main">
+       
+        <!----------------------------------------Overlay Effect---------------------------------------->
+        <div class="overlay">
+            
+            
+            <!-- -------Quote Section-----Show Some Quotes Related to Time's Value ----------------------->
+            <div class="content">
+                <!-- Time Quotes -->
+                <h1>It's never Be Stop...</h1>
+                <h3>Do it Now</h3>
+            </div>
+            <!-- ------------------------------------ /Quote Section ------------------------------------->
+
+            <!----------CountDown Section-------------Which Display the ConnDown Timer ------------------->
+            <div class="countDown-timer">
+                
+                
+                 <!-------Timer Section-------Contains Different Kind of time factors -------------------->
+                 <h1></h1>
+                  <div class="timer">
+                    <!-- Factor 1 : For Days -->
+                    <div class="time">
+                        <input type="text" value="0" readonly>
+                        <h3>Days</h3>
+                    </div>
+                    <!-- Factor 2 : For Hours -->
+                    <div class="time">
+                        <input type="text" value="0" readonly>
+                        <h3>Hour</h3>
+                    </div>
+                    <!-- Factor 3 : For Minutes -->
+                    <div class="time">
+                        <input type="text" value="0" readonly>
+                        <h3>Minute</h3>
+                    </div>
+                    <!-- Factor 4 : For Seconds -->
+                    <div class="time">
+                        <input type="text" value="0" readonly>
+                        <h3>Second</h3>
+                    </div>
+                </div> 
+                <!-- --------------------------------- /Timer Section ----------------------------------->
+
+                
+            </div>
+            <!-- ---------------------------------- /CountDown Section ---------------------------------->
+            
+            <!--Hide Section-------Which Show the Message of New Year After Complete the CountDowm------->
+
+            <!-------------------------------------- /Hide Section-------------------------------------->
+
+            <!------(Time and Date Section)-----------Show The Current Date------------------------------>
+            <div class="date">
+                <span id="CurrentDate"></span>
+            </div>
+            <!--------------------------------  /Date Section-------------------------------------------->
+        </div>
+        
+        <!--------------------------------------- /Overlay Effect---------------------------------------->
+    </div>
+    <!---------------------------------------- /Background Section--------------------------------------->
+
+    <!-- Linking External Javascript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
